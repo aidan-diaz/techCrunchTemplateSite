@@ -1,6 +1,8 @@
 TechCrunch Template Site
 HTML5, CSS3 - Tech Crunch site 
 
+![alt text](css/assets/coverImage.png) 
+
 Link to site: https://responsivedemosite1.netlify.app/
 
 How It's Made:
