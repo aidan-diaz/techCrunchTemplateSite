@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCrunch Responsive Demo Website</title>
+
+<!--STYLESHEETS-->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="clearfix">
+    <header>
+        <div class="logoDiv floatLeft">
+            <img src="css/assets/tclogo.png" alt="Tech Crunch Logo" class="floatLeft">
+        </div>
+        <div class="headerTop floatLeft">
+            <span class="floatLeft">Got a tip? <a href="#" class="tip">Let us know.</a></span>
+            <span class="floatLeft follow">Follow Us</span>
+            <ul>
+                <li><a href="#"><img src="css/assets/fbicon.png" alt="facebook logo"></a></li>
+                <li><a href="#"><img src="css/assets/instagramlogo.png" alt="instagram logo"></a></li>
+                <li><a href="#"><img src="css/assets/twitterlogo.png" alt="twitter logo"></a></li>
+                <li><a href="#"><img src="css/assets/youtubelogo.png" alt="youtube logo"></a></li>
+                <li><a href="#"><img src="css/assets/flipboardlogo.png" alt="flipboard logo"></a></li>
+                <li><a href="#"><img src="css/assets/linkedinlogo.png" alt="linkedin logo"></a></li>
+                <li><a href="#"><img src="css/assets/googlelogo.png" alt="google logo"></a></li>
+                <li><a href="#"><img src="css/assets/rsslogo.png" alt="rss logo"></a></li>
+            </ul>
+        </div>
+        <div class="headerBottom floatLeft">
+            <nav>
+                <ul>
+                    <li>News</li>
+                    <li>Video</li>
+                    <li>Events</li>
+                    <li>Crunchbase</li>
+                </ul>
+                <form class="floatLeft">
+                    <a href="#" class="floatLeft">
+                        <img src="css/assets/msg.png" alt="message icon" class="floatLeft">
+                        <span class="floatLeft">Message Us</span>
+                    </a>
+                    <input type="text" placeholder="Search" class="floatLeft">
+                    <button type="submit floatLeft"></button>
+                </form>
+            </nav>
+        </div>
+        <div class="hamburger floatRight">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- ticket advertisement -->
+    <aside class="ad">
+        <h6>10TH ANNUAL CRUNCHIES</h6>
+        <p>Brooklyn 99 Star Chelsea Peretti To Host The Crunchies This February</p>
+        <a href="#">Get Your Tickets Today</a>
+    </aside>
+    <!-- section that contains main and another section -->
+    <section class="leftContainer floatLeft">
+        <!-- main section -->
+        <main class="floatLeft">
+            <h1><a href="#">WATCH NOW</a> Crunch Report</h1>
+            <div>
+                <img src="css/assets/thumbnail.png" alt="video thumbnail image">
+            </div>
+            <p>Crunch Report is TechCrunch's daily news show. New episodes every weekday at 7 PM ET / 4 PM PT.</p>
+        </main>
+        <!-- nested section, with four more sections nested -->
+        <section class="featuredStories floatLeft">
+            <h2>Featured Stories</h2>
+            <!-- section1 -->
+            <section>
+                <div class="floatLeft">
+                    <img src="css/assets/fbimage.png" alt="image">
+                </div>
+                <div class="floatLeft">
+                    <h2>Facebook Previews Journalism Project features</h2>
+                    <span>By Josh Constine</span>
+                </div>
+            </section>
+            <!-- section2 -->
+            <section>
+                <div class="floatLeft">
+                    <img src="css/assets/crunchbase.png" alt="crunchbase">
+                </div>
+                <div class="floatLeft">
+                    <h2>Crunchbase analyzes 2016 to predict future</h2>
+                    <span>By Connie Loizos</span>
+                </div>
+            </section>
+            <!-- section3 -->
+            <section>
+                <div class="floatLeft">
+                    <img src="css/assets/igstories.png" alt="instagram stories">
+                </div>
+                <div class="floatLeft">
+                    <h2>Instagram Stories launches skippable ads</h2>
+                    <span>By Josh Constine</span>
+                </div>
+            </section>
+            <!-- section4 -->
+            <section>
+                <div class="floatLeft">
+                    <img src="css/assets/trump.png" alt="#">
+                </div>
+                <div class="floatLeft">
+                    <h2>Memos claim Trump's lawyer helped Russia</h2>
+                    <span>By Kate Conger, Devin Coldewey</span>
+                </div>
+            </section>                                
+        </section>
+    </section>
+    <!-- aside tag with newsletter subscription -->
+    <aside class="newsLetter floatLeft">
+        <span>Have a tip, pitch or guest column? <a href="#" class="tip">Send us a tip.</a></span>
+        <!-- h5 could be label for form instead -->
+        <h5>NEWSLETTER SUBSCRIPTIONS</h5>
+        <form>
+            <div>
+                <input type="checkbox" name="dailyCrunch">
+                <label for="dailyCrunch">The Daily Crunch</label>
+                <span>Get the top tech stories of the day delivered to your inbox</span>
+            </div>
+            <div>
+                <input type="checkbox" name="weeklyRoundup">
+                <label for="weeklyRoundup">TC Weekly Roundup</label>
+                <span>Get a weekly recap of the biggest tech stories</span>
+            </div>
+            <div>
+                <input type="checkbox" name="crunchbaseDaily">
+                <label for="crunchbaseDaily">Crunchbase Daily</label>
+                <span>The latest startup funding announcements</span>
+            </div>
+            <div class="subemail">
+                <input type="text" placeholder="Enter your email" class="floatLeft">
+                <button type="submit" class="floatLeft">SUBSCRIBE</button>
+                <a href="#" class="clear">SEE ALL NEWSLETTERS</a>
+            </div>
+        </form>
+    </aside>
+</body>
+</html>

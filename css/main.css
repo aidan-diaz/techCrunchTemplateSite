@@ -1,0 +1,476 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+span {
+    display: block;
+}
+
+header li,
+.ad *,
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+header {
+    width: 100%;
+    height: 15rem;
+}
+
+.headerTop,
+.headerBottom {
+    width: 80%;
+    height: 7.5rem;
+    line-height: 7.5rem;
+}
+
+.logoDiv {
+    height: 15rem;
+    width: 15%;
+    margin-left: 5%;
+}
+
+.logoDiv img {
+    width: auto;
+    height: 14rem;
+}
+
+.headerTop img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.follow {
+    margin-left: 55%;
+}
+
+header form {
+    width: 40%;
+    height: 7.5rem;
+    margin-left: 19%;
+}
+
+header input {
+    width: 55%;
+    height: 5rem;
+    margin-top: 2.5%;
+}
+
+.headerBottom a {
+    width: 30%;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #3E433E;
+    color: white;
+    margin-top: 2.5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.headerBottom img {
+    width: auto;
+    height: 100%;
+    margin-left: 15%;
+}
+
+.headerBottom span {
+    font-size: 1.6rem;
+}
+
+header button {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('assets/magnifyingglass.png');
+    background-size: contain;
+    margin-top: 2.5%;
+    border: 1px solid lightgray;
+    padding: 0;
+}
+
+header span {
+   font-size: 2rem; 
+}
+
+.headerTop li {
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+.headerBottom li {
+    padding-right: 4%;
+    font-size: 3rem;
+}
+
+.headerBottom input::placeholder {
+    color: #089E00;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* AD*/
+
+.ad {
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #0F4A00;
+    color: white;
+    margin: 0 1% 0 2.5%;
+}
+
+.ad * {
+    padding-right: 2rem;
+}
+
+.ad h6 {
+    margin-left: 20%;
+    font-size: 2.4rem;
+}
+
+.ad h6,
+.ad a {
+    font-weight: bold;
+}
+
+.ad p,
+.ad a {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* LEFT CONTAINER */
+
+main,
+.featuredStories {
+    height: 65rem;
+}
+
+.leftContainer {
+    width: 75%;
+    height: 90rem;
+}
+
+main {
+    width: 65%;
+}
+
+main div {
+    width: 95%;
+    margin-left: 5%;
+}
+
+main img {
+    width: 100%;
+}
+
+h1 {
+    height: 7rem;
+    line-height: 7rem;
+    margin-left: 5%;
+    font-size: 3rem;
+}
+
+main p {
+    margin-top: 1%;
+    margin-left: 5%;
+    color: gray;
+    font-size: 2rem;
+}
+
+.featuredStories {
+    width: 33%;
+    margin-left: 2%;
+}
+
+.featuredStories > h2 {
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.featuredStories section {
+    height: 13rem;
+    margin-top: 1rem;
+}
+
+.featuredStories div + div {
+    width: 45%;
+    margin-left: 4%;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+.leftContainer span {
+    color: gray;
+}
+
+/* NEWSLETTER */
+
+.newsLetter {
+    width: 25%;
+    height: 75rem;
+    background-color: #ECECEC;
+}
+
+.newsLetter form {
+    height: 45rem;
+    background-color: white;
+}
+
+h5,
+.newsLetter span,
+.newsLetter form {
+    width: 92%;
+    margin: 0 4%;
+}
+
+h5 {
+    margin-top: 2.5%;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #0F4A00;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.newsLetter form {
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    margin-left: 2%;
+}
+
+.subemail input {
+    height: 4rem;
+    width: 75%;
+    border: 1px solid lightgray;
+}
+
+.newsLetter button {
+    height: 4rem;
+    color: white;
+    background-color: #0A9600;
+    border: none;
+}
+
+.newsLetter div {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.newsLetter form span {
+    margin-left: 3rem;
+}
+
+.newsLetter > span {
+    height: 15rem;
+    margin-top: 2rem;
+    border-top: 10px solid lightgray;
+    border-bottom: 10px solid lightgray;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2.8rem;
+}
+
+.newsLetter a {
+    display: block;
+}
+
+div.subemail {
+    border: none;
+}
+
+.subemail a {
+    color: #909390;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5%;
+}
+
+/* LATEST */
+
+.latest {
+    width: 100%;
+    height: 25rem;
+}
+
+
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  .tip,
+  h1,
+  h1 a {
+    color: #089E00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  h1 a {
+    color: #3E433E;
+    font-weight: 400;
+  }
+
+  .headerBottom li,
+  .featuredStories h2 {
+    color: #50433E;
+  }
+
+  .featuredStories h2 {
+    font-weight: bold;
+  }
+
+  .featuredStories > h2 {
+    font-size: 3rem;
+  }
+
+  .newsLetter label {
+    color: #3E433E;
+  }
+
+  .newsLetter span {
+    color: gray;
+  }
+
+  .newsLetter > span {
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2%;
+    margin-right: 5%;
+  }
+
+  .hamburger span {
+    width: 90%;
+    margin: 22% 5% 0 5%;
+    border: 1px solid black;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media screen and (max-width: 1880px) {
+    .headerTop span {
+        margin-left: 10%;
+    }
+
+    header form {
+        margin-left: 5%;        
+    }   
+  }
+
+  @media screen and (max-width: 1688px) {
+    .subemail input {
+        width: 50%;
+    }
+    .newsLetter form {
+        height: 50rem;
+    }
+  }
+
+  @media (max-width: 1543px) {
+    .newsLetter {
+        display: none;
+    }
+  }
+
+  @media (max-width: 1490px) {
+    .hamburger {
+        display: block;
+    }
+    .headerTop,
+    .headerBottom {
+        display: none;
+    }
+  }
+
+  @media (max-width: 1246px) {
+
+    h1,
+    main,
+    main div,
+    .ad,
+    .ad h6 {
+        margin: 0;
+    }
+
+    .ad p {
+        width: 40%;
+    }
+
+    .leftContainer,
+    .featuredStories,
+    .featuredStories h2,
+    .featuredStories section,
+    main,
+    main div {
+        width: 100%;
+    }
+
+    main,
+    .featuredStories {
+        height: 70rem;
+    }
+
+    .featuredStories section {
+        height: 25rem;
+    }
+
+    .leftContainer {
+        height: 150rem;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .ad * {
+        display: none;
+    }
+  }
